@@ -9,6 +9,10 @@ Examples of some HTML elements:
 `<h1>`My First Heading`</h1>`
 `<p>`My first paragraph.`</p>`
 
+`<h1>	My First Heading	</h1>`
+`<p>	My first paragraph.	</p>`
+`<br>` none none
+
 # Nested HTML Elements
 
 HTML elements can be nested (this means that elements can contain other elements).
@@ -77,3 +81,11 @@ The `<br>` tag defines a line break, and is an empty element without a closing t
 HTML tags are not case sensitive: `<P>` means the same as `<p>`.
 
 The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.
+
+# HTML Tag Reference
+
+W3Schools' tag reference contains additional information about these tags and their attributes.
+
+`<html>` Defines the root of an HTML document
+`<body>` Defines the document's body
+`<h1> to <h6>` Defines HTML headings
