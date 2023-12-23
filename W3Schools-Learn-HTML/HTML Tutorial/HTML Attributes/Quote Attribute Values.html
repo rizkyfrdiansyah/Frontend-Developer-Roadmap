@@ -1,0 +1,21 @@
+<!-- We Suggest: Always Quote Attribute Values
+The HTML standard does not require quotes around attribute values.
+
+However, W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.
+
+Good:
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+Bad:
+<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
+Sometimes you have to use quotes. This example will not display the title attribute correctly, because it contains a space: -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>About W3Schools</h1>
+
+    <p title="About" W3Schools>You cannot omit quotes around an attribute value if the value contains spaces.</p>
+
+    <p><b> If you move the mouse over the paragraph above, your browser will only display the first word from the title. </b></p>
+  </body>
+</html>
