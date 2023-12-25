@@ -1,0 +1,18 @@
+<!-- Input Type Range
+The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes:
+
+Example -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Range Field</h2>
+
+    <p>Depending on browser support: The input type "range" can be displayed as a slider control.</p>
+
+    <form action="/action_page.php" method="get">
+      <label for="vol">Volume (between 0 and 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!-- Input Type Image
+The <input type="image"> defines an image as a submit button.
+
+The path to the image is specified in the src attribute.
+
+Example -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Display an Image as the Submit button</h2>
+
+    <form action="/action_page.php">
+      <label for="fname">First name: </label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name: </label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48" />
+    </form>
+
+    <p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+  </body>
+</html>

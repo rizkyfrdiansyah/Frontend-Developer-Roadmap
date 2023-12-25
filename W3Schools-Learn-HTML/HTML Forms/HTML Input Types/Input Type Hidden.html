@@ -1,0 +1,25 @@
+<!-- Input Type Hidden
+The <input type="hidden"> defines a hidden input field (not visible to a user).
+
+A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+
+A hidden field often stores what database record that needs to be updated when the form is submitted.
+
+Note: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!
+
+Example -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>A Hidden Field (look in source code)</h1>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="hidden" id="custId" name="custId" value="3487" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p><strong>Note:</strong> The hidden field is not shown to the user, but the data is sent when the form is submitted.</p>
+  </body>
+</html>
