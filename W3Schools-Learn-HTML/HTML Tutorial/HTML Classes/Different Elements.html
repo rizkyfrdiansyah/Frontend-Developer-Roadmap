@@ -1,0 +1,26 @@
+<!-- Different Elements Can Share Same Class
+Different HTML elements can point to the same class name.
+
+In the following example, both <h2> and <p> point to the "city" class and will share the same style:
+
+Example -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .city {
+        background-color: tomato;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Different Elements Can Share Same Class</h2>
+
+    <p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+
+    <h2 class="city">Paris</h2>
+    <p class="city">Paris is the capital of France.</p>
+  </body>
+</html>
