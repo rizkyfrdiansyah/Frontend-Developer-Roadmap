@@ -1,0 +1,33 @@
+<!-- Example
+This example uses the POST method when submitting the form data: -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>The method Attribute</h2>
+
+    <p>This form will be submitted using the POST method:</p>
+
+    <form action="/action_page.php" target="_blank" method="post">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+  </body>
+</html>
+<!-- Notes on GET:
+
+Appends the form data to the URL, in name/value pairs
+NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+The length of a URL is limited (2048 characters)
+Useful for form submissions where a user wants to bookmark the result
+GET is good for non-secure data, like query strings in Google
+Notes on POST:
+
+Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+POST has no size limitations, and can be used to send large amounts of data.
+Form submissions with POST cannot be bookmarked
+Tip: Always use POST if the form data contains sensitive or personal information! -->

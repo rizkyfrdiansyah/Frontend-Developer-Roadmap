@@ -1,0 +1,31 @@
+<!-- The Target Attribute
+The target attribute specifies where to display the response that is received after submitting the form.
+
+The target attribute can have one of the following values:
+
+Value	Description
+_blank	The response is displayed in a new window or tab
+_self	The response is displayed in the current window
+_parent	The response is displayed in the parent frame
+_top	The response is displayed in the full body of the window
+framename	The response is displayed in a named iframe
+The default value is _self which means that the response will open in the current window.
+
+Example
+Here, the submitted result will open in a new browser tab: -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>The form target attribute</h2>
+
+    <p>When submitting this form, the result will be opened in a new browser tab:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
