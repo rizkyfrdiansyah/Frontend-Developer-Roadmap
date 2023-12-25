@@ -19,3 +19,9 @@ File paths are used when linking to external files, like:
 - Images
 - Style sheets
 - JavaScripts
+
+# Best Practice
+
+It is best practice to use relative file paths (if possible).
+
+When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.
