@@ -1,0 +1,26 @@
+<!-- The <option> element defines an option that can be selected.
+
+By default, the first item in the drop-down list is selected.
+
+To define a pre-selected option, add the selected attribute to the option:
+
+Example -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Pre-selected Option</h2>
+
+    <p>You can preselect an option with the selected attribute:</p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
