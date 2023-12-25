@@ -1,0 +1,23 @@
+<!-- The Name Attribute for <input>
+Notice that each input field must have a name attribute to be submitted.
+
+If the name attribute is omitted, the value of the input field will not be sent at all.
+
+Example
+This example will not submit the value of the "First name" input field:  -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>The name Attribute</h2>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" value="John" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+    <p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+  </body>
+</html>
