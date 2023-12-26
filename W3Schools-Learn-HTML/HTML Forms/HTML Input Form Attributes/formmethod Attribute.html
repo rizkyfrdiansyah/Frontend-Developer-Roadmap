@@ -1,0 +1,39 @@
+<!-- The formmethod Attribute
+The input formmethod attribute defines the HTTP method for sending form-data to the action URL.
+
+Note: This attribute overrides the method attribute of the <form> element.
+
+The formmethod attribute works with the following input types: submit and image.
+
+The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (method="post").
+
+Notes on the "get" method:
+
+This method appends the form-data to the URL in name/value pairs
+This method is useful for form submissions where a user want to bookmark the result
+There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred
+Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)
+Notes on the "post" method:
+
+This method sends the form-data as an HTTP post transaction
+Form submissions with the "post" method cannot be bookmarked
+The "post" method is more robust and secure than "get", and "post" does not have size limitations
+Example
+A form with two submit buttons. The first sends the form-data with method="get". The second sends the form-data with method="post": -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input formmethod Attribute</h1>
+
+    <p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+
+    <form action="/action_page.php" method="get" target="_blank">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit using GET" />
+      <input type="submit" formmethod="post" value="Submit using POST" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!-- The formenctype Attribute
+The input formenctype attribute specifies how the form-data should be encoded when submitted (only for forms with method="post").
+
+Note: This attribute overrides the enctype attribute of the <form> element.
+
+The formenctype attribute works with the following input types: submit and image.
+
+Example
+A form with two submit buttons. The first sends the form-data with default encoding, the second sends the form-data encoded as "multipart/form-data": -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input formenctype attribute</h1>
+
+    <p>The formenctype attribute specifies how the form data should be encoded when submitted.</p>
+
+    <form action="/action_page_binary.asp" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!-- The formtarget Attribute
+The input formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
+
+Note: This attribute overrides the target attribute of the <form> element.
+
+The formtarget attribute works with the following input types: submit and image.
+
+Example
+A form with two submit buttons, with different target windows: -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input formtarget attribute</h1>
+
+    <p>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="submit" formtarget="_blank" value="Submit to a new window/tab" />
+    </form>
+  </body>
+</html>
