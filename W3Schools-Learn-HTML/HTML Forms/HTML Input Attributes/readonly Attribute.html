@@ -1,0 +1,25 @@
+<!-- The readonly Attribute
+The input readonly attribute specifies that an input field is read-only.
+
+A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+
+The value of a read-only input field will be sent when submitting the form!
+
+Example
+A read-only input field: -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input readonly attribute</h1>
+
+    <p>The readonly attribute specifies that an input field should be read-only (cannot be changed):</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" readonly /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

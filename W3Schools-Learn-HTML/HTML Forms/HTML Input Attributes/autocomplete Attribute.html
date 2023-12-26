@@ -1,0 +1,34 @@
+<!-- The autocomplete Attribute
+The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off.
+
+Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.
+
+The autocomplete attribute works with <form> and the following <input> types: text, search, url, tel, email, password, datepickers, range, and color.
+
+Example
+An HTML form with autocomplete on, and off for one input field: -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The autocomplete attribute</h1>
+
+    <p>The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.</p>
+
+    <p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+
+    <p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field!</p>
+
+    <form action="/action_page.php" autocomplete="on">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" autocomplete="off" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+<!-- Tip: In some browsers you may need to activate an autocomplete function for this to work (Look under "Preferences" in the browser's menu).
+
+ -->

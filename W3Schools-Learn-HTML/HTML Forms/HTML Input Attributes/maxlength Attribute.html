@@ -1,0 +1,23 @@
+<!-- The maxlength Attribute
+The input maxlength attribute specifies the maximum number of characters allowed in an input field.
+
+Note: When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code.
+
+Example
+Set a maximum length for an input field: -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input maxlength attribute</h1>
+
+    <p>The maxlength attribute specifies the maximum number of characters allowed in an input field:</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" size="50" /><br />
+      <label for="pin">PIN:</label><br />
+      <input type="text" id="pin" name="pin" maxlength="4" size="4" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

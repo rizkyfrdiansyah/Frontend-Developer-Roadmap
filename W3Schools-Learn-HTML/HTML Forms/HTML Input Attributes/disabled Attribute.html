@@ -1,0 +1,25 @@
+<!-- The disabled Attribute
+The input disabled attribute specifies that an input field should be disabled.
+
+A disabled input field is unusable and un-clickable.
+
+The value of a disabled input field will not be sent when submitting the form!
+
+Example
+A disabled input field: -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input disabled attribute</h1>
+
+    <p>The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" disabled /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!-- The height and width Attributes
+The input height and width attributes specify the height and width of an <input type="image"> element.
+
+Tip: Always specify both the height and width attributes for images. If height and width are set, the space required for the image is reserved when the page is loaded. Without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout will change during loading (while the images load).
+
+Example
+Define an image as the submit button, with height and width attributes: -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input height and width attributes</h1>
+
+    <p>The height and width attributes specify the height and width of an input type="image" element.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="image" src="img/img_submit.gif" alt="Submit" width="48" height="48" />
+    </form>
+
+    <p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+  </body>
+</html>
