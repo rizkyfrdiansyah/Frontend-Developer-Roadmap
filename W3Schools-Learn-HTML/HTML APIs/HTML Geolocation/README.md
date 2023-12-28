@@ -8,7 +8,7 @@ The HTML Geolocation API is used to get the geographical position of a user.
 
 Since this can compromise privacy, the position is not available unless the user approves it.
 
-### Example explained:
+### Example explained
 
 - Check if Geolocation is supported
 - If supported, run the getCurrentPosition() method. - If not, display a message to the user
